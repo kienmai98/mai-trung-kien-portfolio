@@ -7,7 +7,7 @@ applications:
             - yarn install
         build:
           commands:
-            - yarn build web && yarn nx export web
+            - yarn build && yarn nx export
       artifacts:
         baseDirectory: dist/apps/web/exported
         files:

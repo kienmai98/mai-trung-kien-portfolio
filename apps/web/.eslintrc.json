@@ -5,6 +5,13 @@
     "next/core-web-vitals",
     "../../.eslintrc.json"
   ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "apps/web/tsconfig.json"
+      }
+    }
+  },
   "ignorePatterns": ["!**/*", ".next/**/*"],
   "overrides": [
     {

@@ -11,7 +11,8 @@
       "options": {
         "root": "apps/web",
         "outputPath": "dist/apps/web",
-        "postcssConfig": "apps/web/postcss.config.js"
+        "postcssConfig": "apps/web/postcss.config.js",
+        "buildTarget": "web:build"
       },
       "configurations": {
         "development": {
