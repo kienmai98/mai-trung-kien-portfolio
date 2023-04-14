@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["apps/*"],
-      "uikit": ["libs/uikit/src/index.ts"]
+      "@uikit": ["libs/uikit/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]
