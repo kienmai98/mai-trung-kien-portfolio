@@ -8,7 +8,6 @@
   },
   "private": true,
   "dependencies": {
-    "antd": "^5.4.2",
     "next": "13.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -17,8 +16,9 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@enouvo/eslint-config-react": "^2.0.0",
     "@babel/preset-react": "^7.14.5",
+    "@enouvo/eslint-config-react": "^2.0.0",
+    "@iconify/react": "^4.1.0",
     "@nrwl/cypress": "15.9.2",
     "@nrwl/eslint-plugin-nx": "15.9.2",
     "@nrwl/jest": "15.9.2",
@@ -57,6 +57,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
+    "tailwind-merge": "^1.12.0",
     "tailwindcss": "^3.3.1",
     "ts-jest": "^29.0.5",
     "ts-node": "10.9.1",

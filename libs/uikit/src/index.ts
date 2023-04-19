@@ -1,1 +1,1 @@
-export * from 'antd';
+export { Icon } from '@iconify/react';
