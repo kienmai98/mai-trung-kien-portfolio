@@ -7,6 +7,7 @@ const nextConfig = {
   nx: {
     svgr: false,
   },
+  output: 'export',
 };
 
 module.exports = withNx(nextConfig);
