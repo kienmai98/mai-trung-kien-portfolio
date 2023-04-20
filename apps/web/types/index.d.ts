@@ -22,3 +22,9 @@ export interface SiteConfig {
     twitter: string;
   };
 }
+
+export interface FrameworkConfig {
+  name: string;
+  icon: string;
+  href: string;
+}

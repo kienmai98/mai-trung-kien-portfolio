@@ -1,4 +1,4 @@
-import { ExternalNav, MainNav } from '@/web/components/Nav';
+import { MainNav } from '@/web/components/Nav';
 import { dashboardConfig } from '@/web/config/dashboard';
 
 interface DashboardLayoutProps {
@@ -7,16 +7,15 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="mx-auto flex flex-col space-y-6">
-      <header className="container sticky top-0 z-40 bg-white">
-        <div className="flex h-16 items-center justify-between border-b border-b-slate-200 py-4">
-          <MainNav items={dashboardConfig.mainNav} />
-          <ExternalNav items={dashboardConfig.externalNav} />
-        </div>
+    <div className="container mx-auto flex flex-col space-y-6">
+      <header className="sticky top-0 z-40 mt-6 h-16 rounded-xl bg-white shadow-sm">
+        <MainNav
+          externalItems={dashboardConfig.externalNav}
+          items={dashboardConfig.mainNav}
+        />
       </header>
-      <main className="container mx-auto flex flex-1 flex-col overflow-hidden">
-        {children}
-      </main>
+
+      <main className="flex flex-1 flex-col overflow-hidden">{children}</main>
     </div>
   );
 }
