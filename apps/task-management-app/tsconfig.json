@@ -28,12 +28,13 @@
     "**/*.js",
     "**/*.jsx",
     "next-env.d.ts",
-    "../../apps/web/.next/types/**/*.ts",
+    "../../apps/task-management-app/.next/types/**/*.ts",
     "eslintrc.js",
-    "../../dist/apps/web/.next/types/**/*.ts",
+    "../../dist/apps/task-management-app/.next/types/**/*.ts",
     ".next/types/**/*.ts",
-    "../../dist/apps/web/build/types/**/*.ts",
-    "../../apps/task-management-app/.next/types/**/*.ts"
+    "../../dist/apps/task-management-app/build/types/**/*.ts",
+    "../../apps/task-management-app/.next/types/**/*.ts",
+    "../../dist/apps/task-management-app/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
