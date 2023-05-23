@@ -15,7 +15,12 @@
       "jest",
       "node"
     ],
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "**/*.ts",
@@ -27,7 +32,7 @@
     "eslintrc.js",
     "../../dist/apps/web/.next/types/**/*.ts",
     ".next/types/**/*.ts",
-    "../../dist/apps/web/build/types/**/*.ts"
+    "../../dist/apps/web/build/types/**/*.ts",
   ],
   "exclude": [
     "node_modules",

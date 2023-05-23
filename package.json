@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "start": "nx serve",
+    "serve": "nx serve",
+    "start": "nx start",
     "build": "nx build --skip-nx-cache"
   },
   "private": true,
