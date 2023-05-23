@@ -8,8 +8,8 @@
     "strict": true
   },
   "files": [
-    "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
-    "../../node_modules/@nrwl/next/typings/image.d.ts"
+    "../../node_modules/@nx/react/typings/cssmodule.d.ts",
+    "../../node_modules/@nx/next/typings/image.d.ts"
   ],
   "exclude": [
     "jest.config.ts",
@@ -21,7 +21,13 @@
     "**/*.test.js",
     "**/*.spec.jsx",
     "**/*.test.jsx",
-    ".eslintrc.js",
+    ".eslintrc.js"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx", ".eslintrc.js"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".eslintrc.js"
+  ]
 }

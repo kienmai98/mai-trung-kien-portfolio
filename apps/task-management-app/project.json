@@ -1,7 +1,7 @@
 {
-  "name": "web",
+  "name": "task-management-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/web",
+  "sourceRoot": "apps/task-management-app",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,14 +9,13 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/web",
-        "outputPath": "dist/apps/web",
-        "postcssConfig": "apps/web/postcss.config.js",
-        "buildTarget": "web:build"
+        "root": "apps/task-management-app",
+        "outputPath": "dist/apps/task-management-app",
+         "postcssConfig": "apps/task-management-app/postcss.config.js"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/web"
+          "outputPath": "apps/task-management-app"
         },
         "production": {}
       }
@@ -25,16 +24,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "web:build",
+        "buildTarget": "task-management-app:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "web:build:development",
+          "buildTarget": "task-management-app:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "web:build:production",
+          "buildTarget": "task-management-app:build:production",
           "dev": false
         }
       }
@@ -42,14 +41,14 @@
     "export": {
       "executor": "@nx/next:export",
       "options": {
-        "buildTarget": "web:build:production"
+        "buildTarget": "task-management-app:build:production"
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/web/jest.config.ts",
+        "jestConfig": "apps/task-management-app/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -63,7 +62,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/task-management-app/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

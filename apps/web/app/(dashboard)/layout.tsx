@@ -7,7 +7,7 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="container mx-auto flex flex-col space-y-6">
+    <div className="container mx-auto flex h-screen flex-col space-y-6">
       <header className="sticky top-0 z-40 mt-6 h-16 rounded-xl bg-white shadow-sm">
         <MainNav
           externalItems={dashboardConfig.externalNav}

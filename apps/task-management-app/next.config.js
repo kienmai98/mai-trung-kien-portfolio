@@ -1,9 +1,9 @@
 const { withNx } = require('@nx/next/plugins/with-nx');
 
+/**
+ * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
+ **/
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   nx: {
     svgr: false,
   },

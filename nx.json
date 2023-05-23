@@ -1,7 +1,7 @@
 {
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "N2E1MDQyZTEtMGUyMS00NWE4LWFkOTEtYTUzZWNhODkxNmExfHJlYWQtd3JpdGU="
@@ -23,7 +23,7 @@
     }
   },
   "generators": {
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "babel": true
       },
@@ -31,7 +31,7 @@
         "unitTestRunner": "jest"
       }
     },
-    "@nrwl/next": {
+    "@nx/next": {
       "application": {
         "style": "css",
         "linter": "eslint"
