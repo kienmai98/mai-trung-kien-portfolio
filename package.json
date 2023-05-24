@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "serve": "nx serve",
     "start": "nx start",
     "build": "nx build --skip-nx-cache"
@@ -63,8 +64,5 @@
     "@nx/linter": "16.2.1",
     "@nx/next": "16.2.1",
     "@nx/jest": "16.2.1"
-  },
-  "workspaces": [
-    "libs/*"
-  ]
+  }
 }

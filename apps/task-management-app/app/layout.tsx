@@ -1,7 +1,4 @@
-import { Inter } from 'next/font/google';
 import '@/web/styles/global.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   authors: [
@@ -24,7 +21,7 @@ export default function RootLayout({
       lang="en"
     >
       <head />
-      <body className={`min-h-screen ${inter.className}`}>{children}</body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }
